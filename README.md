@@ -13,6 +13,7 @@ https://github.com/hydrojumbo/CUAHSI.Apps
 I will be fleshing out documentation for a bit now. Long story short, if you install the Windows Azure .NET SDK and Tools with the web platform installer (http://go.microsoft.com/fwlink/?LinkID=254364&clcid=0x409 for Visual Studio 2012), you should be able to pull this repository from github, open the solution (.sln) in Visual Studio, turn on Nuget pull during the build (http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages), and press play on Visual Studio to start running your own instance of the data.cuahsi.org/ app from your localhost. Cross-origin resource sharing implemented in the data.cuahsi.org HTTP API service allows you to make the necessary AJAX requests to the services at https://data.cuahsi.org/.
 
 The main files you want to deal with are in the CUAHSI.Browser app:
+
 Scripts/
   cuahsidata.js => contains in-browser database definitions, and global API parameters
   datavis.js => contains generic data visualization framework for representing data from the in-browser database with jqGrid (table display) and flot (line series plots); extendable into application-specific decision support systems.
