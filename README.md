@@ -1,16 +1,17 @@
 CUAHSI.Apps
 ===========
 
-CUAHSI.Apps is a platform for creating decision support and data visualization tools connected to CUAHSI data services.
+CUAHSI.Apps is a platform for creating decision support and data visualization tools connected to CUAHSI Water Data Center data services.
 
 CUAHSI.Apps consists of:
 
-CUAHSI.Browser, an HTML5 + JS + CSS + IndexedDB two-tab browser application that combines a pre-built user interface for finding and downloading hydrologic data from CUAHSI data services, with a flexible data visualization page capable of rendering downloaded data. The data visualization page and local database can be extended into a browser-based decision support system (DSS) that can use real-world public hydrologic data without making any network requests - data a user downloads is already inside the in-browser IndexedDB database. This project is configured to run inside the Windows Azure live and local emulation environments. This means that with the required programs installed on your computer, you can begin prototyping a working decision support system built out of HTML, JS, and CSS. Later, if you decide to host your application, you can replace settings with information from your account, and deploy to your own cloud system.
+CUAHSI.Browser, an HTML5 + JS + CSS + IndexedDB two-tab browser application that combines a pre-built user interface for finding and downloading hydrologic data from CUAHSI data services, with a flexible data visualization page capable of rendering downloaded data. The data visualization page and local database can be extended into a browser-based decision support system (DSS) that can use real-world public hydrologic data without making any network requests - data a user downloads is already inside the in-browser IndexedDB database. This project is configured to run inside the Windows Azure live and local emulation environments. This means that with the required programs installed on your computer, you can begin prototyping a working decision support system built out of HTML, JS, and CSS. If you later decide to host your application in the cloud, you can replace a setting in a configuration file with information from your Windows Azure subscription, and deploy to your own cloud system.
 
 
-https://github.com/hydrojumbo/CUAHSI.Apps
+INSTRUCTIONS
+===========
 
-I will be fleshing out documentation for a bit now. Long story short, if you install the Windows Azure .NET SDK and Tools with the web platform installer (http://go.microsoft.com/fwlink/?LinkID=254364&clcid=0x409 for Visual Studio 2012), you should be able to pull this repository from github, open the solution (.sln) in Visual Studio, turn on Nuget pull during the build (http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages), and press play on Visual Studio to start running your own instance of the data.cuahsi.org/ app from your localhost. Cross-origin resource sharing implemented in the data.cuahsi.org HTTP API service allows you to make the necessary AJAX requests to the services at https://data.cuahsi.org/.
+Install the Windows Azure .NET SDK and Tools with the web platform installer (http://go.microsoft.com/fwlink/?LinkID=254364&clcid=0x409 for Visual Studio 2012), you should be able to pull this repository from github, open the solution (.sln) in Visual Studio, turn on Nuget pull during the build (http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages), and press play on Visual Studio to start running your own instance of the data.cuahsi.org/ app from your localhost. Cross-origin resource sharing implemented in the data.cuahsi.org HTTP API service allows you to make the necessary AJAX requests to data services run by the CUAHSI Water Data Center.
 
 The main files you want to deal with are in the CUAHSI.Browser app:
 
