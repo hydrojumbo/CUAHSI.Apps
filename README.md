@@ -27,4 +27,9 @@ Install the Windows Azure .NET SDK and Tools with the web platform installer (ht
   + BundleConfig.cs => if you want to add a js or css dependency, include it in the appropriate ScriptBundle ("~/bundles/discovery" or "~/bundles/datavis") or in the "~/Content/css" StyleBundle.
 
 ####Also, in the CUAHSI.Apps solution:
-  + ServiceConfiguration.Cloud.cscfg => if you want to publish your application to a live cloud system, get an Azure subscription, create a new storage account, and copy its connection string to the Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString value in this file. You may also wish to increase your instances count for greater guarantees of availability. After making these modifications, you can follow standard instructions for publishing a Web Role to Windows Azure: http://msdn.microsoft.com/en-us/library/windowsazure/ff683672.aspx
+  + ServiceConfiguration.Cloud.cscfg => if you want to publish your application to a live cloud system:
+    1. Get an Azure subscription. 
+    2. Create a new storage account. 
+    3. Copy one of the two connection strings of the new storage account to the Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString value in this file. 
+    4. You may also wish to increase your instances count for greater guarantees of availability. 
+    5. After making these modifications, you can follow standard instructions for publishing a Web Role to Windows Azure: http://msdn.microsoft.com/en-us/library/windowsazure/ff683672.aspx
