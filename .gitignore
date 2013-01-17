@@ -1,0 +1,8 @@
+bin/
+obj/
+ClientBin/
+*.user
+Generated_Code/
+packages/
+*.suo
+csx/

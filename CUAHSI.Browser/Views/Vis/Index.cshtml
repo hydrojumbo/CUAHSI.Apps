@@ -1,0 +1,28 @@
+﻿<!--
+ * Copyright (c) 2013, Alex Bedig, New BSD License: https://github.com/hydrojumbo/CUAHSI.Apps/blob/master/LICENSE.md
+ -->
+
+@{
+    Layout = "~/Views/Shared/_DataVisLayout.cshtml";
+    Page.Title = "CUAHSI Data Visualization Client";    
+    <script>
+        var appDomain = '@(ViewBag.ServiceDomain)';
+        var sessionID = '@(ViewBag.ThisSession)';
+    </script>
+}
+<div id="wrap">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span4">           
+            <table id="SeriesGrid"></table><div id="SeriesGridPager"></div>            
+        </div>
+        <div class="span8">                       
+            <h2 id="flotTitle"></h2>
+            <div id="flotPlot" style="position:relative; width:800px; height:500px; z-index: 1;"></div>
+            <div id="flotLegend"></div>
+        </div>
+      </div>      
+    </div> <!-- /container-fluid -->
+    <div id="push"></div>
+</div> <!-- /wrap -->
+<div id="footer"></div>

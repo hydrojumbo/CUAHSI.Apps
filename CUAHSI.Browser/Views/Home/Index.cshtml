@@ -1,0 +1,32 @@
+﻿<!--
+ * Copyright (c) 2013, Alex Bedig, New BSD License: https://github.com/hydrojumbo/CUAHSI.Apps/blob/master/LICENSE.md
+ -->
+@{
+    Page.Title = "CUAHSI Data Discovery Portal";    
+    <script>
+        var appDomain = '@(ViewBag.ServiceDomain)';
+        var sessionID = '@(ViewBag.ThisSession)';
+    </script>
+}
+<div id="wrap">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">           
+            <h2>Available Data</h2>
+            <div class="accordion" id="ontologyNav">
+                
+            </div>  
+            <button id="searchBtn">Search</button>
+            <div id="selectionSummary"><br /><p>Select at least one option from the lists above and click Search to view sites of matching data on the map. Pan or zoom the map to find sites matching your choices in other areas.</p></div>
+        </div>
+        <div class="span9">            
+            <div class="row-fluid">
+                <div id="mapDiv"></div>
+                <div id="infobox"></div>
+            </div>            
+        </div>
+      </div>      
+    </div> <!-- /container-fluid -->
+    <div id="push"></div>
+</div> <!-- /wrap -->
+<div id="footer"></div>
