@@ -15,16 +15,16 @@ Install the Windows Azure .NET SDK and Tools with the web platform installer (ht
 ####The main files you want to deal with are in the CUAHSI.Browser app:
 
 ####Scripts/
-  ^ cuahsidata.js => contains in-browser database definitions, and global API parameters
-  ^ datavis.js => contains generic data visualization framework for representing data from the in-browser database with jqGrid (table display) and flot (line series plots); extendable into application-specific decision support systems.
-  ^ discovery.js => contains application code for discovery interface; this component is closer to stable than datavis.js, and could be coupled as-is to a more advanced datavis.js to create useful dss systems.
+  + cuahsidata.js => contains in-browser database definitions, and global API parameters
+  + datavis.js => contains generic data visualization framework for representing data from the in-browser database with jqGrid (table display) and flot (line series plots); extendable into application-specific decision support systems.
+  + discovery.js => contains application code for discovery interface; this component is closer to stable than datavis.js, and could be coupled as-is to a more advanced datavis.js to create useful dss systems.
 
 ####Views/
-  ^ Home/Index.cshtml => defines structure of discovery UI (home page) page
-  ^ Vis/Index.cshtml => defines structure of data visualization UI (extend this page to create DSS apps)
+  + Home/Index.cshtml => defines structure of discovery UI (home page) page
+  + Vis/Index.cshtml => defines structure of data visualization UI (extend this page to create DSS apps)
 
 ####App_Start/
-  ^ BundleConfig.cs => if you want to add a js or css dependency, include it in the appropriate ScriptBundle ("~/bundles/discovery" or "~/bundles/datavis") or in the "~/Content/css" StyleBundle.
+  + BundleConfig.cs => if you want to add a js or css dependency, include it in the appropriate ScriptBundle ("~/bundles/discovery" or "~/bundles/datavis") or in the "~/Content/css" StyleBundle.
 
 ####Also, in the CUAHSI.Apps solution:
-^ ServiceConfiguration.Cloud.cscfg => if you want to publish your application to a live cloud system, get an Azure subscription, create a new storage account, and copy its connection string to the Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString value in this file. You may also wish to increase your instances count for greater guarantees of availability. After making these modifications, you can follow standard instructions for publishing a Web Role to Windows Azure: http://msdn.microsoft.com/en-us/library/windowsazure/ff683672.aspx
+  + ServiceConfiguration.Cloud.cscfg => if you want to publish your application to a live cloud system, get an Azure subscription, create a new storage account, and copy its connection string to the Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString value in this file. You may also wish to increase your instances count for greater guarantees of availability. After making these modifications, you can follow standard instructions for publishing a Web Role to Windows Azure: http://msdn.microsoft.com/en-us/library/windowsazure/ff683672.aspx
