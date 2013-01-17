@@ -10,7 +10,7 @@ An HTML5 + JS + CSS + IndexedDB two-tab browser application that combines a pre-
 Getting Started
 ---------------
 
-Install the Windows Azure .NET SDK and Tools with the web platform installer (http://go.microsoft.com/fwlink/?LinkID=254364&clcid=0x409 for Visual Studio 2012), you should be able to pull this repository from github, open the solution (.sln) in Visual Studio, turn on Nuget pull during the build (http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages), and press play on Visual Studio to start running your own instance of the data.cuahsi.org/ app from your localhost. Cross-origin resource sharing implemented in the data.cuahsi.org HTTP API service allows you to make the necessary AJAX requests to data services run by the CUAHSI Water Data Center.
+Install the Windows Azure .NET SDK and Tools with the web platform installer (http://go.microsoft.com/fwlink/?LinkID=254364&clcid=0x409 for Visual Studio 2012), you should be able to pull this repository from github, open the solution (.sln) in Visual Studio, turn on Nuget pull during the build (http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages), and press play on Visual Studio to start running your own instance of the data.cuahsi.org/ app from your localhost. Cross-origin resource sharing implemented in the data.cuahsi.org HTTP API service allows you to make the necessary AJAX requests to data services run by the CUAHSI Water Data Center, no matter where your app is hosted.
 
 ####The main files you want to deal with are in the CUAHSI.Browser app:
 
