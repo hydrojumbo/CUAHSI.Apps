@@ -1,4 +1,4 @@
-CUAHSI.Apps
+CUAHSI.Apps - public hydrologic data applications
 ===========
 
 ###CUAHSI.Apps is a platform for creating decision support and data visualization tools connected to CUAHSI Water Data Center data services. CUAHSI.Apps consists of:
